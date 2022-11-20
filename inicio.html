@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="script.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="/imagenes/rebance games jaloguin.png">
+</head>
+<body>
+
+<header class="header">
+
+    <img id="logo" src="/imagenes/rebance games jaloguin.png" alt="" width="50px">
+
+    <a href="#seccion1">Saber Edad</a>
+    
+    <a href="#seccion2">Saber IMC</a>
+    
+    <a href="#seccion3">Conversor pesos a dolares</a>
+
+    <a href="#seccion4">Conversor de centimetros a metros</a>
+    
+</header>
+
+<aside class="panel">
+    <nav class="menu">
+
+        <a href="#seccion1">Sección 1</a>
+        
+        <a href="#seccion2">Sección 2</a>
+        
+        <a href="#seccion3">Sección 3</a>
+        
+        <a href="#seccion4">Sección 4</a>
+        
+        <a href="#seccion5">Sección 5</a>
+
+    </nav>
+</aside>
+
+<main>
+
+    <section id="seccion1" class="section">
+        <h1>Saber edad por año de nacimiento</h1>
+        <input id="nacimiento" type="number" placeholder="Año nacimiento...">
+        <button id="submit" onclick="saberEdad()">SABER EDAD</button>
+        <p id="texto"></p>
+    </section>
+
+    <section id="seccion2" class="section">
+        <h1>Saber Indice de Masa Corporal</h1>
+        <input type="number" id="estatura" placeholder="Estatura en CM...">
+        <input type="number" id="peso" placeholder="Peso en kilogramos...">
+        <button id="submit2" onclick="saberIMC()">VER IMC</button>
+        <p id="texto2"></p>
+    </section>
+
+    <section id="seccion3" class="section">
+        <h1>Conversor de pesos a dolares</h1>
+        <input type="number" id="pesos" placeholder="Cantidad de pesos...">
+        <button id="submit3" onclick="conversorDolares()">CONVERTIR</button>
+        <p id="texto3"></p>
+    </section>
+
+    <section id="seccion4" class="section">
+        <h1>Conversor de centimetros a metros</h1>
+        <input type="text" id="centimetros" placeholder="Centimetros...">
+        <button id="submit4" onclick="conversorCentimetros()">CONVERTIR</button>
+        <p id="texto4"></p>
+    </section>
+
+    <section id="seccion5" class="section">
+        <h1>Mini sistema pedorro</h1>
+        <input type="text" id="texto5" placeholder="Length de 10 a 20">
+        <input type="number" id="numero" placeholder="Numero entre 10 y 20">
+        <button id="submit5" onclick="validarForm()">VALIDAR</button>
+    </section>
+    
+    <section id="seccion6" class="section">
+
+    </section>
+
+</main>
+    
+</body>
+</html>
